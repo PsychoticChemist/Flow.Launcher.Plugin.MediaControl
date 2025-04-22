@@ -35,24 +35,28 @@ namespace Flow.Launcher.Plugin.MediaControl
                 Action = MediaPlaybackAction.Toggle,
                 Keywords = new List<string>{"play", "pause", "toggle"},
                 Title = "Toggle playback"
+                IcoPath = "images/playpause.png",
             };
              yield return new ()
             {
                 Action = MediaPlaybackAction.Next,
                 Keywords = new List<string>{"next", "skip"},
                 Title = "Next track"
+                IcoPath = "images/next.png",
             };
              yield return new ()
             {
                 Action = MediaPlaybackAction.Previous,
                 Keywords = new List<string>{"back", "previous"},
                 Title = "Previous track"
+                IcoPath = "images/back.png",
             };
              yield return new ()
             {
                 Action = MediaPlaybackAction.Stop,
                 Keywords = new List<string>{"stop"},
                 Title = "Stop playback"
+                IcoPath = "images/stop.png",
             };
 }
     }
