@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Flow.Launcher.Plugin;
 
@@ -30,6 +31,7 @@ namespace Flow.Launcher.Plugin.MediaControl
 
         public static IEnumerable<MediaControlAction> Actions()
         {
+
             yield return new ()
             {
                 Action = MediaPlaybackAction.Toggle,
