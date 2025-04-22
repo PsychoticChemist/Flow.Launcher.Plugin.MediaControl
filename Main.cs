@@ -74,7 +74,7 @@ namespace Flow.Launcher.Plugin.MediaControl
             return new Result
             {
                 Action = (context) => { MediaController.Execute(Action); return true; },
-                Title = $"{Title} (Icon: {IcoPath})",
+                Title = Title,
                 IcoPath = IcoPath,
             };
         }
